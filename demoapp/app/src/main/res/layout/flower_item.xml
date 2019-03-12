@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    >
+  <com.makeramen.roundedimageview.RoundedImageView
+      android:id="@+id/flower_photo"
+      android:layout_width="48dp"
+      android:layout_height="48dp"
+      android:scaleType="fitCenter"
+      android:src="@drawable/scarlet"
+      app:riv_corner_radius="24dp"
+      app:riv_mutate_background="true"
+      app:riv_oval="true"
+      />
+  <TextView
+      android:id="@+id/flower_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:textColor="@color/flower_title"
+      android:textSize="16sp"
+      android:textStyle="bold"
+      tools:text="Scarlet Pimpernel"
+      />
 </LinearLayout>
