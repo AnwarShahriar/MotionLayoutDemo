@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MotionTest</string>
+  <string name="flower_list">Flower List</string>
 </resources>
